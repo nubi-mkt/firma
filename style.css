@@ -1,0 +1,94 @@
+* {
+margin:0;
+padding: 0;
+font-family:'Public Sans',sans-serif;
+}
+
+body {
+font-size: 12px;
+}
+
+h1 {
+color:#00377D
+}
+
+form {
+font-size: 12px;
+/*width:480px;*/
+margin-right: 40px;
+margin-bottom: 40px;
+padding: 24px;
+border-radius:15px;
+background-color:white;
+border: none;  
+box-shadow: 0px 3px 16px rgba(0,0,0,0.1);
+text-align: left;
+}
+
+input, label {
+width:100%;
+display:block;
+color:#888;
+}
+
+label {
+padding-bottom: 4px;
+}
+
+input {
+background-color:#eef;
+border-radius: 5px;
+border: none; 
+padding: 8px;
+/*margin-bottom: 8px;*/
+box-sizing: border-box;
+}
+
+label{
+font-weight: bold;
+}
+
+hr {
+visibility: hidden;
+margin: 8px;
+}
+
+#mainContainer {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+align-content: center;
+justify-content: center;
+}
+
+#template {
+padding: 20px;
+background-color: white;
+width:640px;
+max-width:100%;
+box-sizing: border-box;
+}
+
+#playBadge {
+height: 64px;
+margin: 8px -10px;
+}
+
+button {
+display: block;
+color: white;
+background-color: #2DDCB4;
+font-size: 12px;
+font-weight:bold;
+text-transform: uppercase;
+padding: 15px 25px;
+margin: 20px auto;
+border-radius: 40px;
+cursor:pointer;
+border: none;
+}
+
+button:hover {
+background-color: #1EBEA5;
+}
