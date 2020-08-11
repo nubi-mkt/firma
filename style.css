@@ -2,6 +2,9 @@
 margin:0;
 padding: 0;
 font-family:'Public Sans',sans-serif;
+}
+
+body input label {
 font-size: 16px;
 }
 
@@ -67,10 +70,7 @@ visibility: hidden;
 margin: 8px;
 }
 
-#playBadge {
-height: 64px;
-margin: 8px -10px;
-}
+
 
 button {
 display: block;
