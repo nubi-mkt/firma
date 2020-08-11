@@ -2,14 +2,11 @@
 margin:0;
 padding: 0;
 font-family:'Public Sans',sans-serif;
-}
-
-body {
-font-size: 12px;
+font-size: 16px;
 }
 
 h1 {
-color:#00377D
+color:#00377D;
 }
 
 form {
@@ -54,19 +51,18 @@ margin: 8px;
 }
 
 #mainContainer {
-min-height: 100vh;
+height: 100%;
 display: flex;
 flex-direction: column;
 align-items: center;
-align-content: center;
 justify-content: center;
 }
 
 #template {
 padding: 20px;
 background-color: white;
-width:640px;
-max-width:100%;
+width:90%;
+max-width:640px;
 box-sizing: border-box;
 }
 
