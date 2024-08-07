@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
 margin:0;
 padding: 0;
-font-family: 'Public Sans', sans-serif;
+font-family: 'Inter', sans-serif;
 font-weight: 400;
 }
 
@@ -21,14 +21,14 @@ margin: auto;
 
 #template {
 max-width: 640px;
-margin: 10%;
-margin: 10% auto ;
-padding: 20px;
+height: auto;
+margin: auto;
+padding: 50px;
 box-sizing: border-box;
 }
 
 h1 {
-color:#00377D;
+color:#1928A3;
 }
 
 form {
@@ -36,7 +36,7 @@ margin-bottom: 40px;
 padding: 24px;
 border-radius:16px;
 background-color:white;
-border: 1px solid #eeefff;  
+border: 1px solid #fff4ee;  
 box-shadow: 0px 3px 16px rgba(0,0,1,0.05);
 text-align: left;
 }
@@ -48,12 +48,14 @@ color:#888;
 }
 
 label {
-font-weight: 500;
+font-weight: 800;
 padding-bottom: 8px;
+color:#1928A3;
+font-family: 'Red Hat Display', sans-serif;
 }
 
 input {
-background-color:#eeefff;
+background-color:#EEEFFF;
 border-radius: 5px;
 border: none; 
 padding: 12px;
@@ -69,7 +71,7 @@ margin: 8px;
 button {
 display: block;
 color: white;
-background-color: #2DDCB4;
+background-color: #1928A3;
 font-size: 16px;
 font-weight:bold;
 padding: 16px 32px;
@@ -80,5 +82,5 @@ border: none;
 }
 
 button:hover {
-background-color: #1EBEA5;
+background-color: #93BBFF;
 }
