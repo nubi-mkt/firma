@@ -1,111 +1,111 @@
 <head>
-    <title>Nubi: Generador de firmas</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
-    <!--SCRIPT-->
-    <script>
-        //Name
-        function addname()
-        {
-        var name = document.getElementById("name");
-        var s = name.value;
-        document.getElementById('name1').innerHTML = s;
-        }
+  <title>Nubi: Generador de firmas</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
+  <!--SCRIPT-->
+  <script>
+      //Name
+      function addname()
+      {
+      var name = document.getElementById("name");
+      var s = name.value;
+      document.getElementById('name1').innerHTML = s;
+      }
 
-        //Title
-        function addjobtitle()
-        {
-        var jobtitle = document.getElementById("jobtitle");
-        var s = jobtitle.value;
-        document.getElementById('jobtitle1').innerHTML = s;
-        }
+      //Title
+      function addjobtitle()
+      {
+      var jobtitle = document.getElementById("jobtitle");
+      var s = jobtitle.value;
+      document.getElementById('jobtitle1').innerHTML = s;
+      }
 
-        //Mobile Phone Number
-        function addmobileno()
-        {
-        var mobileno = document.getElementById("mobileno");
-        var s = mobileno.value;
-        document.getElementById('mobileno-input').innerHTML = s
-        }
+      //Mobile Phone Number
+      function addmobileno()
+      {
+      var mobileno = document.getElementById("mobileno");
+      var s = mobileno.value;
+      document.getElementById('mobileno-input').innerHTML = s
+      }
 
-        //Email Address
-        function addemailaddress()
-        {
-        var email = document.getElementById("email");
-        var s = email.value;
-        document.getElementById('email-input').innerHTML = s
-        document.getElementById('email-input').href= "mailto:"+s;
-        }
+      //Email Address
+      function addemailaddress()
+      {
+      var email = document.getElementById("email");
+      var s = email.value;
+      document.getElementById('email-input').innerHTML = s
+      document.getElementById('email-input').href= "mailto:"+s;
+      }
 
-        //Copy
+      //Copy
 
-        $(function() {
-        new Clipboard('#copy-button');
-        });
-    </script>
+      $(function() {
+      new Clipboard('#copy-button');
+      });
+  </script>
 </head>
 <body>
-    <div id="mainContainer">
-        <div id="template">
-        <!--Fill out form - STARTS HERE-->
-        <form>
-            <label>Tu nombre:</label>
-            <input id="name" type="text" name="name" value="Nombre Apellido" onKeyup="addname()" required>
-            <hr>
-            <label>Cargo:</label>
-            <input id="jobtitle" type="text" name="jobtitle" value="Empleado" onKeyup="addjobtitle()" required>
-            <hr>
-            <label>Teléfono:</label>
-            <input id="mobileno" type="text" name="mobileno" value="0 800 122 6824" onKeyup="addmobileno()" required>
-            <hr>
-            <label>Mail:</label>
-            <input id="email" type="email" name="email" value="tumail@tunubi.com" onKeyup="addemailaddress()" required>
-        </form>
-        <!--Fill out form - ENDS HERE-->     
-        <!--Signature  Template - STARTS HERE-->
-        <div id="copy">
-            <table>
-                <tr>
-                    <td>
-                    <img src="https://cdn-assets-cloud.frontify.com/s3/frontify-cloud-files-us/eyJwYXRoIjoiZnJvbnRpZnlcL2FjY291bnRzXC9mY1wvMTgyNDE2XC9wcm9qZWN0c1wvMjMzNjQwXC9hc3NldHNcLzM1XC80MDAzNzQxXC80YjU4MjgwODRjMjBiNjcwODhmYTc3MmQ5NzI3Njk3MS0xNTgyODIyNjMzLnBuZyJ9:cloud:R5ij2-F5HySGAuvkyOfSLJTWCAVfWhRfx88t_zBjcT8" width="128" alt="Nubi">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    <span style="font-family:'Public Sans',Helvetica,Arial,sans-serif;font-size:16px;font-weight:bold;color:#999;">-</span><br>
-                    <span style="font-family:'Public Sans',Helvetica,Arial,sans-serif;font-size:16px;font-weight:700;color:#999;" id="name1"></span><br>
-                    <span style="font-family:'Public Sans',Helvetica,Arial,sans-serif;font-size:12px;font-weight:bold;color:#999; text-transform: uppercase; margin-top: 2px" id="jobtitle1"></span><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="padding-top: 4px;">
-                        <span style="font-family:'Public Sans',Helvetica,Arial,sans-serif;font-size:12px;color:#999;">
-                            T: <span id="mobileno-input"></span>
-                            <br>
-                        <a href="https://www.tunubi.com/" style="color:#2DDCB4; text-decoration: none" target="_blank">www.tunubi.com</a> / <a href="mailto:tumail@millicom.com" style="color:#2DDCB4; text-decoration: none" id="email-input"></a>
-                            <br>
-                            Blas Parera 3551, Piso 6
-                            <br>
-                            (1636) Olivos, Buenos Aires
-                            <br>
-                        </span>
-                        <span style="font-family:'Public Sans',Helvetica,Arial,sans-serif;font-size:12px;color:#999;margin-top: 8px">
-                            <hr style="margin: 4px; visibility: hidden">
-                        </span>
-                        <span style="font-size: 10px; color: #999; font-family: sans-serif">
-                            <br>
-                            La información contenida en el presente correo y en sus adjuntos -en su caso- es confidencial y de uso exclusivo para los destinatarios del mismo. Si Ud. recibe este correo por error tenga bien notificar al emisor y eliminarlo. Está prohibido a las personas o entidades que no sean los destinatarios de este correo cualquier tipo de modificación, copia, distribución, divulgación, retención o uso de la información que contiene. Nubi S.A., sus vinculados y demás sociedades del grupo no se responsabilizan por cualquier uso del correo electrónico que fuera: abusivo, contrario a la moral, a las buenas costumbres o a la ley, o realizado fuera de las competencias laborales del autor del mail. Este no es un medio utilizado para contraer obligaciones contractuales, excepto que, previamente, así se hubiera pactado por escrito.
-                        </span>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <button type="button" id="copy-button" data-clipboard-target="#copy">
-            Copiá la firma
-            </button>
-        </div>
-        <!--Signature  Template - ENDS HERE-->
-    </div>
+  <div id="mainContainer">
+      <div id="template">
+      <!--Fill out form - STARTS HERE-->
+      <form>
+          <label>Tu nombre:</label>
+          <input id="name" type="text" name="name" value="Nombre Apellido" onKeyup="addname()" required>
+          <hr>
+          <label>Cargo:</label>
+          <input id="jobtitle" type="text" name="jobtitle" value="Empleado" onKeyup="addjobtitle()" required>
+          <hr>
+          <label>Teléfono:</label>
+          <input id="mobileno" type="text" name="mobileno" value="0 800 122 6824" onKeyup="addmobileno()" required>
+          <hr>
+          <label>Mail:</label>
+          <input id="email" type="email" name="email" value="tumail@tunubi.com" onKeyup="addemailaddress()" required>
+      </form>
+      <!--Fill out form - ENDS HERE-->     
+      <!--Signature  Template - STARTS HERE-->
+      <div id="copy">
+          <table>
+              <tr>
+                  <td>
+                  <img src="https://uploads-ssl.webflow.com/620e9a3666993e482a71b3ce/66b3b08b40848f7efe764d55_Recurso%201.svg" width="128" alt="Nubi">
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                  <span style="font-family:'Inter',sans-serif;font-size:16px;font-weight:bold;color:#999;  line-height: 2;">-</span><br>
+                  <span style="font-family:'Public Sans',Helvetica,Arial,sans-serif;font-size:16px;font-weight:700;color:#999; line-height: 2" id="name1"></span><br>
+                  <span style="font-family:'Public Sans',Helvetica,Arial,sans-serif;font-size:12px;font-weight:bold;color:#999; text-transform: uppercase; margin-top: 5px" id="jobtitle1"></span><br>
+                  </td>
+              </tr>
+              <tr>
+                  <td style="padding-top: 4px;">
+                      <span style="font-family:'Public Sans',Helvetica,Arial,sans-serif;font-size:12px;color:#999;line-height: 1.5;">
+                          T: <span id="mobileno-input"></span>
+                          <br>
+                      <a href="https://www.nubi.com.ar/" style="color:#1928A3; text-decoration: none" target="_blank">www.nubi.com.ar</a> / <a href="mailto:tumail@millicom.com" style="color:#1928A3; text-decoration: none" id="email-input"></a>
+                          <br>
+                          Torre Bellini - Esmeralda 950, Piso 9
+                          <br>
+                          C1007, Cdad. Autónoma de Buenos Aires
+                          <br>
+                      </span>
+                      <span style="font-family:'Public Sans',Helvetica,Arial,sans-serif;font-size:12px;color:#999;margin-top: 8px">
+                          <hr style="margin: 4px; visibility: hidden">
+                      </span>
+                      <span style="font-size: 10px; color: #999; font-family: sans-serif">
+                          <br>
+                          La información contenida en el presente correo y en sus adjuntos -en su caso- es confidencial y de uso exclusivo para los destinatarios del mismo. Si Ud. recibe este correo por error tenga bien notificar al emisor y eliminarlo. Está prohibido a las personas o entidades que no sean los destinatarios de este correo cualquier tipo de modificación, copia, distribución, divulgación, retención o uso de la información que contiene. Nubi S.A., sus vinculados y demás sociedades del grupo no se responsabilizan por cualquier uso del correo electrónico que fuera: abusivo, contrario a la moral, a las buenas costumbres o a la ley, o realizado fuera de las competencias laborales del autor del mail. Este no es un medio utilizado para contraer obligaciones contractuales, excepto que, previamente, así se hubiera pactado por escrito.
+                      </span>
+                  </td>
+              </tr>
+          </table>
+      </div>
+      <button type="button" id="copy-button" data-clipboard-target="#copy">
+          Copiá la firma
+          </button>
+      </div>
+      <!--Signature  Template - ENDS HERE-->
+  </div>
 </body>
